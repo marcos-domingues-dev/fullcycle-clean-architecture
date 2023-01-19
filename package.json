@@ -1,7 +1,7 @@
 {
   "devDependencies": {
     "@swc/cli": "^0.1.59",
-    "@swc/core": "^1.3.26",
+    "@swc/core": "^1.3.27",
     "@swc/jest": "^0.2.24",
     "@types/jest": "^27.5.2",
     "@types/jstoxml": "^2.0.2",
@@ -26,8 +26,8 @@
     "jstoxml": "^3.2.3",
     "nodemon": "^2.0.15",
     "reflect-metadata": "^0.1.13",
-    "sequelize": "^6.17.0",
-    "sequelize-typescript": "^2.1.3",
+    "sequelize": "^6.28.0",
+    "sequelize-typescript": "^2.1.5",
     "sqlite3": "^5.0.2",
     "uuid": "^8.3.2",
     "yup": "^0.32.11"
