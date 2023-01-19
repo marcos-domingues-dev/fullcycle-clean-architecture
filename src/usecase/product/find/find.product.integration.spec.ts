@@ -1,5 +1,4 @@
 import { Sequelize } from "sequelize-typescript";
-import Product from "../../../domain/product/entity/product";
 import ProductFactory from "../../../domain/product/factory/product.factory";
 import ProductModel from "../../../infrastructure/product/repository/sequelize/product.model";
 import ProductRepository from "../../../infrastructure/product/repository/sequelize/product.repository";
@@ -29,7 +28,7 @@ describe("Find product integration test", () => {
     const findProductUseCase = new FindProductUsecase(productRepository);
 
     const product = ProductFactory.create("a", "Product test abc", 12.55);
-    await productRepository.create(product as Product);
+    await productRepository.create(product);
 
     const input = {
       id: product.id

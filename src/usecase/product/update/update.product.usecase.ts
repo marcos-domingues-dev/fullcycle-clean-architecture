@@ -1,4 +1,3 @@
-import Product from "../../../domain/product/entity/product";
 import ProductFactory from "../../../domain/product/factory/product.factory";
 import ProductRepositoryInterface from "../../../domain/product/repository/product-repository.interface";
 import { InputUpdateProductDto, OutputUpdateProductDto } from "./update.product.dto";
@@ -17,7 +16,7 @@ export default class UpdateProductUsecase {
       input.price
     );
 
-    await this.productRepository.update(product as Product);
+    await this.productRepository.update(product);
 
     return {
       type: input.type,

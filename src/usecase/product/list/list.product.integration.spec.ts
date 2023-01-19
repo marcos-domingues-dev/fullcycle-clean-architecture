@@ -1,5 +1,4 @@
 import { Sequelize } from "sequelize-typescript";
-import Product from "../../../domain/product/entity/product";
 import ProductFactory from "../../../domain/product/factory/product.factory";
 import ProductModel from "../../../infrastructure/product/repository/sequelize/product.model";
 import ProductRepository from "../../../infrastructure/product/repository/sequelize/product.repository";
@@ -40,8 +39,8 @@ describe("List product unit test", () => {
   it("should list products", async () => {
     const productRepository = new ProductRepository();
     const listProductUsecase = new ListProductUsecase(productRepository);
-    await productRepository.create(product1 as Product);
-    await productRepository.create(product2 as Product);
+    await productRepository.create(product1);
+    await productRepository.create(product2);
 
     const inputListProduct = {};
 
