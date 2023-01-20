@@ -51,5 +51,8 @@
 	$ npm i -D @types/supertest
 
 ## Instalação do yup validator
-
 	$ npm install yup
+
+## Instalação do conversor XML
+	$ npm i jstoxml
+	$ npm i -D @types/jstoxml
