@@ -31,3 +31,25 @@
 
 ## Test
 	$ npm test
+
+---
+
+## Instalar Express e dotenv
+	$ npm install express @types/express dotenv
+
+## Instalar nodemon - Ferramenta de ajuda com servidor web
+	// -> Nota: ver 'package.json' > "scripts" > "dev"
+	$ npm install nodemon
+
+## Rodar script 'dev'
+	$ npm run dev
+
+## Instalar supertest
+	// -> Ajuda a fazer teste End To End ( consegue chamar instancia do 'express')
+	
+	$ npm i -D supertest	
+	$ npm i -D @types/supertest
+
+## Instalação do yup validator
+
+	$ npm install yup
