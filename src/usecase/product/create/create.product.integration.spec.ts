@@ -4,6 +4,7 @@ import ProductRepository from "../../../infrastructure/product/repository/sequel
 import CreateProductUsecase from "./create.product.usecase";
 
 const input = {
+  type: "a",
   name: "Product ABC",
   price: 12.5
 }
@@ -33,7 +34,8 @@ describe("Create product integration test", () => {
 
     const output = await createProductUsecase.execute(input);
 
-    expect(output).toEqual(input);
+    expect(output.name).toEqual(input.name);
+    expect(output.price).toEqual(input.price);
   });
 
   it("should thrown an error when name is missing", async () => {

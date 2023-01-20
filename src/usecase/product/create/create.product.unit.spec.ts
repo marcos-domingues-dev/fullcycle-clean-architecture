@@ -2,6 +2,7 @@ import ProductRepository from "../../../infrastructure/product/repository/sequel
 import CreateProductUsecase from "./create.product.usecase";
 
 const input = {
+  type: "a",
   name: "Product A",
   price: 12.5
 };

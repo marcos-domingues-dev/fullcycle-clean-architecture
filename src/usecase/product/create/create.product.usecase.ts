@@ -10,7 +10,8 @@ export default class CreateProductUsecase {
   }
 
   async execute(inputCreateProductDto: InputCreateProductDto): Promise<OutputCreateProductDto> {
-    const product = ProductFactory.create("a",
+    const product = ProductFactory.create(
+      inputCreateProductDto.type,
       inputCreateProductDto.name,
       inputCreateProductDto.price);
 
